@@ -1,0 +1,6 @@
+/* every html page has a body whether it is specified as an element in the code or not */
+<style>
+body {
+  background-color:black;
+}
+</style>
