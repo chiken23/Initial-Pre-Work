@@ -1,0 +1,173 @@
+/* Global resets */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+	color: #424242;
+	line-height: 1.4;
+}
+
+/* Fonts */
+h1 {
+	font-family: "rooney-web", "AmericanTypewriter", Rockwell, serif;
+	font-size: 2.5em;
+	font-weight: bold;
+}
+
+.container {
+	margin: 2em auto;
+	max-width: 630px;
+	text-align: center;
+}
+
+/* The following font information and color codes are provided for you.  They do not match the prototype exactly, but they are fine to use for the assignment and doing so does not count against you.  They are simply meant to help you save time.  We would like everyone to have as close to a pixel-perfect match to the prototype as possible.  If you do find a font/color that matches more precisely, please share it with the team so we can improve the activity for future applicants.  Thank you!  Happy coding!
+
+	FONTS:
+	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+	font-family: "rooney-web", "AmericanTypewriter", Rockwell, serif;
+
+  COLORS:
+  blue: #20A1D4;
+  green: #1CBC2C;
+  orange: #EF5F3C;
+  black: #424242;
+  grey: #777;
+  light grey: #eaeaea;
+*/
+
+/* Your CSS code goes here */
+
+.black-background{
+  background-color: #424242;
+  text-align:center;
+  color: white;
+  height:50px;
+  border-color: #424242;
+  border-width: 10px;
+  border-style: solid;
+  border-radius: 15px;
+  font-size:35px;
+  font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+}
+  #box-container {
+    display: flex;
+    height: 10px;
+    border-color:#DCDCDC;
+    border-width:1px;
+    border-style:solid;
+  }
+
+  #box-1 {
+    background-color: orangered;
+    height: 10px;
+    flex-grow:3;
+  }
+
+  #box-2 {
+    background-color: #DCDCDC;
+    height: 10px;
+    flex-grow:1;
+  }
+  #donate-box{
+      font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+      border-color:#DCDCDC;
+      border-width:1px;
+      border-style:solid;
+      font-size:35px;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      grid-template-rows:1fr 1fr 1fr;
+      grid-column-gap:5px;
+      grid-row-gap: 0px;
+      grid-template-areas:
+      "Header Header2"
+      "content content"
+      "footer footer2";
+  }
+
+  .only{
+      color:red;
+      grid-area:Header;
+      margin:10px 0px 10px 10px;
+      height:1fr;
+      width:1fr;
+      justify-self:center;
+  }
+  #to-donate{
+      justify-self:start;
+      grid-area:Header2;
+      margin:10px 10px 10px -30px;
+  }
+
+  .nudge{
+      grid-area:content;
+      padding:0px 10px 0px 40px;
+  }
+  .button{
+	background-color: green;
+	color: white;
+	width: 1fr;
+	font-size:35px;
+	height: 1fr;
+	grid-area:footer2;
+	border-color:green;
+	border-width:5px;
+	border-radius:10px;
+	border-style:solid;
+	margin:10px 10px 10px 10px;
+}
+ form {
+     padding:0px 10px 0px 30px;
+ width:1fr;
+ height:1fr;
+ margin:10px 10px 0px 10px;
+ position:relative;
+
+ }
+   input {
+ width:100%;
+ height:90%;
+ font-size:45px;
+ text-indent:50px;
+
+   }
+
+.hyperlink{
+    font-size: 20px;
+    font-style:italic;
+    padding:0px 0px 0px 40px;
+}
+.save{
+    background-color:#DCDCDC;
+    color:black;
+    height:40px;
+    border-style:solid;
+    border-color:#DCDCDC;
+    border-radius:5px;
+    font-size:25px;
+    font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+}
+.share{
+    background-color:#DCDCDC;
+    color:black;
+    border-style:solid;
+    border-color:#DCDCDC;
+    border-radius:5px;
+    font-size:25px;
+    font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+}
+footer{
+    display:flex;
+    padding:10px 0px 0px 0px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr;
+    column-gap:20px;
+}
+.bold{
+    font-weight:bold;
+}
